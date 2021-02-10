@@ -1,10 +1,10 @@
 /node_modules
 node_modules
 
-/dist/images/
-/dist/css/
-/dist/js/
+dist/images/
+dist/css/
+dist/js/
 
-/src/images/
-/src/js/
-/src/css/
+src/images/
+src/js/
+src/css/
