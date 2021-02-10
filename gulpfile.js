@@ -37,8 +37,11 @@ exports.es5 = es5
 /* сборка и сжатие библиотек и js */
 const allScripts = () => {
     const strUrl = 'src/js/*';
+
     const arrayurl = ['src/js/1.js', 'src/js/1.js']; // example
+
     const name = 'all-scripts.min.js';
+    
     return gulp.src(strUrl)
         .pipe(concat(name)) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -49,8 +52,11 @@ exports.allScripts = allScripts;
 /* минификации CSS библиотек */
 const cssLibs = () => {
     const strUrl = 'src/css/*';
+    
     const arrayurl = ['src/css/1.js', 'src/css/1.js']; // example
+
     const name = 'all-styles.js';
+
     return gulp.src(strUrl) 
         .pipe(concat(name))
         .pipe(cssnano()) // Сжимаем
